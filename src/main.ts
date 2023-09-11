@@ -26,7 +26,7 @@ register(proj4);
 const layerinfos: LayerInfo[] = [
   {
     format: new GeoJson(),
-    url: '/ne_50m_land.json',
+    url: './ne_50m_land.json',
     options: {
       style: new Style({
         fill: new Fill({
@@ -38,7 +38,7 @@ const layerinfos: LayerInfo[] = [
     },
   },
   {
-    url: '/ne_50m_lakes.json',
+    url: './ne_50m_lakes.json',
     format: new GeoJson(),
     options: {
       style: new Style({
@@ -50,7 +50,7 @@ const layerinfos: LayerInfo[] = [
     }
   },
   {
-    url: '/ne_50m_rivers_lake_centerlines.json',
+    url: './ne_50m_rivers_lake_centerlines.json',
     format: new GeoJson(),
     options: {
       style: new Style({
@@ -66,7 +66,7 @@ const layerinfos: LayerInfo[] = [
     }
   },
   {
-    url: '/ne_50m_populated_places.json',
+    url: './ne_50m_populated_places.json',
     format: new GeoJson(),
     options: {
       style: (f: FeatureLike, resolution: number): Style | undefined => {
@@ -90,7 +90,7 @@ const layerinfos: LayerInfo[] = [
     }
   },
   {
-    url: '/ne_50m_lakes.json',
+    url: './ne_50m_lakes.json',
     format: new GeoJson(),
     options: {
       style: new Style({
